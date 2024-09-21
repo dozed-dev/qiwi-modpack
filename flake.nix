@@ -5,8 +5,8 @@
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     packwiz2nix = {
-      url = "github:getchoo/packwiz2nix/rewrite";
-      #inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:dozed-dev/packwiz2nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
