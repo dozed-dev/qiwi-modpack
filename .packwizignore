@@ -1,0 +1,8 @@
+/.gitattributes
+/.gitignore
+/files
+/LICENSE
+/README.md
+/flake.lock
+/flake.nix
+/notes.md
