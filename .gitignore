@@ -7,3 +7,6 @@
 # Exclude nix files
 result
 .direnv
+
+# Exclude zip contents output
+/out

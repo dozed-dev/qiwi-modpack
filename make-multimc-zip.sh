@@ -19,8 +19,9 @@ filelist=(
   [".minecraft/packwiz-installer.jar"]="$packwiz_jars_folder/packwiz-installer.jar"
 )
 
-dest="$(mktemp -d)"
-trap 'rm -rf -- "$dest"' EXIT
+dest="$src/out"
+mkdir -p "$dest"
+#trap 'rm -rf -- "$dest"' EXIT
 
 mkdir "$dest/.minecraft"
 for copy_to in "${!filelist[@]}"; do
