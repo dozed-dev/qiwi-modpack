@@ -33,6 +33,9 @@
         modpack-zip = mkMultiMCPack {
           src = self.packages.${system}.modpack;
           instanceCfg = ./files/instance.cfg;
+          extraFiles = {
+            "mmc-pack.json" = ./files/mmc-pack.json;
+          };
         };
         default = self.packages.${system}.modpack-zip;
       };
