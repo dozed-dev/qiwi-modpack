@@ -11,3 +11,8 @@ hash = "514b51a2a4914ee0e9949200252c67e9d6cf07fd4bf850261f57fe5f892bcdcf"
 [[files]]
 file = "flake.nix"
 hash = "f382db420e6b53009adc057c217c6009a6b32728114d43ab2b147ccacadb1529"
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "32183306d7fd027a408716bc1d40b66f50fdeb5ecb5ad5ee3309f7c89bd00da4"
+metafile = true
