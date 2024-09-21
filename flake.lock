@@ -33,31 +33,10 @@
         "type": "indirect"
       }
     },
-    "packwiz2nix": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1726935816,
-        "narHash": "sha256-WqN/GbjRhF/2wK939Vv/CUbZFRN8feU45Qk+ubEGCl8=",
-        "owner": "dozed-dev",
-        "repo": "packwiz2nix",
-        "rev": "3b7e67f78267740b5f2fbd29bd8f7686884e9bf9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "dozed-dev",
-        "repo": "packwiz2nix",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs",
-        "packwiz2nix": "packwiz2nix"
+        "nixpkgs": "nixpkgs"
       }
     },
     "systems": {
