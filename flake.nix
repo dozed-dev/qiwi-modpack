@@ -25,7 +25,7 @@
       packages = {
         modpack = fetchPackwizModpack {
           manifest = "${self}/pack.toml";
-          hash = "";
+          hash = "sha256-Bs04hnAXwirwn7krfYlCr4RiRhXLX3Sw0G0FdxlDnsg=";
         };
         modpack-zip = mkMultiMCPack {
           src = self.packages.${system}.modpack;
