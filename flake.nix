@@ -45,6 +45,7 @@
           packwiz
           unzip
           zip
+          temurin-jre-bin-21
         ];
       };
     }
