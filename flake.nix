@@ -4,7 +4,10 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    packwiz2nix.url = "github:getchoo/packwiz2nix/rewrite";
+    packwiz2nix = {
+      url = "github:getchoo/packwiz2nix/rewrite";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -25,7 +28,7 @@
       packages = {
         modpack = fetchPackwizModpack {
           manifest = "${self}/pack.toml";
-          hash = "sha256-Bs04hnAXwirwn7krfYlCr4RiRhXLX3Sw0G0FdxlDnsg=";
+          hash = "";
         };
         modpack-zip = mkMultiMCPack {
           src = self.packages.${system}.modpack;
