@@ -1,0 +1,13 @@
+name = "Qiwi modpack (personal)"
+author = "dozed-dev"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "555eeaf79401f0a64e43d09be389b45240f185c8947172dc2fbda5d79599978a"
+
+[versions]
+fabric = "0.16.5"
+minecraft = "1.21.1"
