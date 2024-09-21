@@ -23,7 +23,7 @@ dest="$src/out"
 mkdir -p "$dest"
 #trap 'rm -rf -- "$dest"' EXIT
 
-mkdir "$dest/.minecraft"
+mkdir -p "$dest/.minecraft"
 for copy_to in "${!filelist[@]}"; do
   copy_from="${filelist[$copy_to]}"
   cp -T "$src/$copy_from" "$dest/$copy_to"
