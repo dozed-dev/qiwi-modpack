@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
     packwiz2nix = {
       url = "github:getchoo/packwiz2nix/rewrite";
-      inputs.nixpkgs.follows = "nixpkgs";
+      #inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
