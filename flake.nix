@@ -20,6 +20,7 @@
           unzip
           zip
           temurin-jre-bin-21
+          toml-cli
         ];
       };
     }
