@@ -1,6 +1,82 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/fabric_loader_dependencies.json"
+hash = "8672db6bcd4b6a25cbdc6aa55f1e89822468f40128662943b9e3fce9d75c7ab2"
+
+[[files]]
+file = "config/immediatelyfast.json"
+hash = "fe91b244220f7342db0552fd295a7ac6ed0abf830db06d63b1fd89bbedcf6742"
+
+[[files]]
+file = "config/yosbr/config/PaginatedAdvancements.json5"
+hash = "3a1c71d2011cac176e00697237148ee882393b19394374862f8025f129d4c5a2"
+
+[[files]]
+file = "config/yosbr/config/capes.json5"
+hash = "c88ac7aec7bc08f867f8a9f6c7bf9396871d03d12b0f4d7100e8ef1fddfac68e"
+
+[[files]]
+file = "config/yosbr/config/citresewn.json"
+hash = "057e9e53790394db8b700616de3c235b0af3dc12fe7731a66ad20026acb9d991"
+
+[[files]]
+file = "config/yosbr/config/controlify.json"
+hash = "8c79b471bad59fcb9d73c4689dd6687be63facefd73a17f11f1bf4acf00c158d"
+
+[[files]]
+file = "config/yosbr/config/debugify.json"
+hash = "70785772d8e66e1b75fa58ef0ceff1b598a78a025b05908ffd03c66cb6a1216d"
+
+[[files]]
+file = "config/yosbr/config/dynamic_fps.json"
+hash = "904f649068d150556bdc1d4477610a3f9234d663ac8af69bf2366b70cbcc8bec"
+
+[[files]]
+file = "config/yosbr/config/entity_texture_features.json"
+hash = "cef51db1150ae1f30f504c8932c274ba174441d4fa177cda048b407da59d5865"
+
+[[files]]
+file = "config/yosbr/config/fastquit.toml"
+hash = "17225e085e6759210cec7e829e00c8c90f9c5d38714835cb5da9c98398842f7d"
+
+[[files]]
+file = "config/yosbr/config/iris.properties"
+hash = "3f5878535aacbfea79ae6da2f9142963f5662af3141692f0ba945767c9096ce5"
+
+[[files]]
+file = "config/yosbr/config/lambdynlights.toml"
+hash = "326ec0c840e65aedf5c6048ea6016d551be38cf23f692949e105a4a388ad8be7"
+
+[[files]]
+file = "config/yosbr/config/midnightlib.json"
+hash = "57b848fb6d7c03b6124297de49b1e4cb169e74db042c74aecf79f035ae2f3980"
+
+[[files]]
+file = "config/yosbr/config/modmenu.json"
+hash = "cab638ef75572d2c4bcc9dfd583283e7bbe927fd6c3834930bed52e2dbcac063"
+
+[[files]]
+file = "config/yosbr/config/moreculling.toml"
+hash = "60eb0902eac918d39fb5eb7df66314f5748aef0259b4ad5bdeacd27dfff120ca"
+
+[[files]]
+file = "config/yosbr/config/puzzle.json"
+hash = "4449fb9b3440c4367f861d0f8e75b879caf6c897cb47569f13929ca37d6c864d"
+
+[[files]]
+file = "config/yosbr/config/rrls.toml"
+hash = "59fa5a7fdbcc83cc2dd9a23542d0f950d2e6ba64c368b456c4afc5f8900d8e1d"
+
+[[files]]
+file = "config/yosbr/config/sodium-options.json"
+hash = "37aaf52aa7545527c7ade71ac77ad2fcf6019995bf58b6ea1fe0f52949919d18"
+
+[[files]]
+file = "config/yosbr/options.txt"
+hash = "6a44a4b8c47da468b8e504b95ff1bbaf4911fdec7ddcdc614422c975d7332e6c"
+
+[[files]]
 file = "mods/animatica.pw.toml"
 hash = "58134b8f4cca95555746efad25cc8a56c39ed57ba05f78d3aa61b603d378180c"
 metafile = true
@@ -146,11 +222,6 @@ hash = "90f207724a47d6b32f45c6a53da2539f544df944709418761ec8ede01a401a47"
 metafile = true
 
 [[files]]
-file = "mods/no-chat-reports.pw.toml"
-hash = "100a5dfaccb55b107edc57e11fafc1222dc443ce9b669f0d79a39b488e3e45ae"
-metafile = true
-
-[[files]]
 file = "mods/noisium.pw.toml"
 hash = "85984b4af80646c0d92388512daeb1ef5404ec76b83fd0958103b3b38e98fff1"
 metafile = true
@@ -203,4 +274,19 @@ metafile = true
 [[files]]
 file = "mods/yosbr.pw.toml"
 hash = "6f6334f336a876088431df70e2bba6ac52ca2ddeb73a4880ce88d6954b09af00"
+metafile = true
+
+[[files]]
+file = "resourcepacks/Chat_Reporting_Helper.pw.toml"
+hash = "de3638002da8769311c320caefe3da2930d7ff5b1a384d3114649875c41d9004"
+metafile = true
+
+[[files]]
+file = "resourcepacks/Fast_Better_Grass.pw.toml"
+hash = "290391e0d98878f0a9218891f04e7fd8d6259c8feb032a3c503c75007a3189ef"
+metafile = true
+
+[[files]]
+file = "resourcepacks/Translations_for_Sodium.pw.toml"
+hash = "82783a119fdd8e553b945be2ed2bd33c9eaa3c68a44b58c5925be85d1ea05a6c"
 metafile = true
