@@ -1,0 +1,133 @@
+_version = 2
+
+[client]
+	#
+	# Should Distant Horizon's config button appear in the options screen next to fov slider?
+	optionsButton = true
+
+	[client.advanced]
+
+		[client.advanced.lodBuilding]
+			#
+			# How should block data be compressed when creating LOD data?
+			# This setting will only affect new or updated LOD data,
+			# any data already generated when this setting is changed will be
+			# unaffected until it is modified or re-loaded.
+			#
+			# MERGE_SAME_BLOCKS
+			# Every block/biome change is recorded in the database.
+			# This is what DH 2.0 and 2.0.1 all used by default and will store a lot of data.
+			# Expected Compression Ratio: 1.0
+			#
+			# VISUALLY_EQUAL
+			# Only visible block/biome changes are recorded in the database.
+			# Hidden blocks (IE ores) are ignored.
+			# Expected Compression Ratio: 0.7
+			worldCompression = "VISUALLY_EQUAL"
+			#
+			# What algorithm should be used to compress new LOD data?
+			# This setting will only affect new or updated LOD data,
+			# any data already generated when this setting is changed will be
+			# unaffected until it needs to be re-written to the database.
+			#
+			# UNCOMPRESSED
+			# Should only be used for testing, is worse in every way vs [LZ4].
+			# Expected Compression Ratio: 1.0
+			# Estimated average DTO read speed: 1.64 milliseconds
+			# Estimated average DTO write speed: 12.44 milliseconds
+			#
+			# LZ4
+			# A good option if you're CPU limited and have plenty of hard drive space.
+			# Expected Compression Ratio: 0.36
+			# Estimated average DTO read speed: 1.85 ms
+			# Estimated average DTO write speed: 9.46 ms
+			#
+			# LZMA2
+			# Slow but very good compression.
+			# Expected Compression Ratio: 0.14
+			# Estimated average DTO read speed: 11.89 ms
+			# Estimated average DTO write speed: 192.01 ms
+			dataCompression = "LZMA2"
+			#
+			# Determines how long must pass between LOD chunk updates before another.
+			# update can occur
+			#
+			# Increasing this value will reduce CPU load but may may cause
+			# LODs to become outdated more frequently or for longer.
+			minTimeBetweenChunkUpdatesInSeconds = 1
+
+		[client.advanced.autoUpdater]
+			#
+			# If DH should use the nightly (provided by Gitlab), or stable (provided by Modrinth) build.
+			# If [AUTO] is selected DH will update to new stable releases if the current jar is a stable jar
+			# and will update to new nightly builds if the current jar is a nightly jar (IE the version number ends in '-dev').
+			updateBranch = "AUTO"
+			#
+			# Automatically check for updates on game launch?
+			enableAutoUpdater = false
+			#
+			# Should Distant Horizons silently, automatically download and install new versions?
+			enableSilentUpdates = false
+
+			[client.advanced.graphics.genericRendering]
+				#
+				# If true LOD clouds will be rendered.
+				enableCloudRendering = true
+				#
+				# If true LOD beacon beams will be rendered.
+				enableBeaconRendering = true
+				#
+				# If true non terrain objects will be rendered in DH's terrain.
+				# This includes beacon beams and clouds.
+				enableRendering = true
+
+			[client.advanced.graphics.quality]
+				#
+				# The radius of the mod's render distance. (measured in chunks)
+				lodChunkRenderDistanceRadius = 128
+				#
+				# Should the blocks underneath avoided blocks gain the color of the avoided block?
+				#
+				# True: a red flower will tint the grass below it red.
+				# False: skipped blocks will not change color of surface below them.
+				tintWithAvoidedBlocks = true
+				#
+				# This indicates how quickly LODs decrease in quality the further away they are.
+				# Higher settings will render higher quality fake chunks farther away,
+				# but will increase memory and GPU usage.
+				horizontalQuality = "MEDIUM"
+				#
+				# How should LOD transparency be handled.
+				#
+				# COMPLETE: LODs will render transparent.
+				# FAKE: LODs will be opaque, but shaded to match the blocks underneath.
+				# DISABLED: LODs will be opaque.
+				transparency = "COMPLETE"
+				#
+				# This indicates how well LODs will represent
+				# overhangs, caves, floating islands, etc.
+				# Higher options will make the world more accurate, butwill increase memory and GPU usage.
+				#
+				# Lowest Quality: HEIGHT_MAP
+				# Highest Quality: EXTREME
+				verticalQuality = "MEDIUM"
+
+		[client.advanced.worldGenerator]
+			#
+			# Should Distant Horizons slowly generate LODs
+			#  outside the vanilla render distance?
+			#
+			#  Note: when on a server, distant generation isn't supported
+			#  and will always be disabled.
+			enableDistantGeneration = false
+
+		[client.advanced.multiplayer]
+			#
+			# How should multiplayer save folders should be named?
+			#
+			# NAME_ONLY: Example: "Minecraft Server"
+			# IP_ONLY: Example: "192.168.1.40"
+			# NAME_IP: Example: "Minecraft Server IP 192.168.1.40"
+			# NAME_IP_PORT: Example: "Minecraft Server IP 192.168.1.40:25565"NAME_IP_PORT_MC_VERSION: Example: "Minecraft Server IP 192.168.1.40:25565 GameVersion 1.16.5"
+			serverFolderNameMode = "NAME_ONLY"
+
