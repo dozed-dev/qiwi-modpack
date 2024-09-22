@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
   };
 
   outputs = {
@@ -23,6 +24,8 @@
           toml-cli
         ];
       };
+    } // {
+      server = import ./server.nix;
     }
   );
 }
