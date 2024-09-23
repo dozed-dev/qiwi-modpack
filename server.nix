@@ -19,7 +19,7 @@
         package = pkgs.fabricServers.fabric-1_21.override { loaderVersion = "0.16.5"; };
         symlinks = {
           "mods" = "${modpack}/mods";
-          "config" = "${modpack}/config";
+          #"config" = "${modpack}/config";
         };
 
         serverProperties = {
