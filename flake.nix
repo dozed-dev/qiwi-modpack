@@ -3,33 +3,40 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    flake-parts.url = "github:hercules-ci/flake-parts";
     nix-minecraft.url = "github:Infinidoge/nix-minecraft";
   };
 
-  outputs = inputs@{
+  outputs = {
     nixpkgs,
-    flake-utils,
+    nix-minecraft,
     ...
-  }:
-    flake-utils.lib.eachDefaultSystem (system: let
-      pkgs = import nixpkgs {inherit system;};
-    in {
-      imports = [ ./server.nix ];
-      devShells.default = pkgs.mkShell {
-        packages = with pkgs; [
-          packwiz
-          unzip
-          zip
-          temurin-jre-bin-21
-          toml-cli
-        ];
+  }: {
+    nixosModules = {
+      server = let
+        pkgs = import nixpkgs {
+          overlays = [nix-minecraft.overlay];
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
+      in {
+        imports = [ nix-minecraft.nixosModules.minecraft-servers ];
+
+        services.minecraft-servers = {
+          enable = true;
+          eula = true;
+          servers = {
+            test-server1 = {
+              enable = true;
+              package = pkgs.vanillaServers.vanilla-1_21;
+
+              serverProperties = {
+                serverPort = 25565;
+              };
+            };
+          };
+        };
       };
-    }
-  ) // {
-    nixosModules = rec {
-      default = server;
-      server = (import ./server.nix) inputs ;
     };
   };
 }
