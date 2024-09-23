@@ -7,7 +7,7 @@
     nix-minecraft.url = "github:Infinidoge/nix-minecraft";
   };
 
-  outputs = {
+  outputs = inputs@{
     nixpkgs,
     flake-utils,
     ...
@@ -15,6 +15,7 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {inherit system;};
     in {
+      imports = [ ./server.nix ];
       devShells.default = pkgs.mkShell {
         packages = with pkgs; [
           packwiz
@@ -24,9 +25,12 @@
           toml-cli
         ];
       };
-    } // {
-      server = import ./server.nix;
     }
-  );
+  ) // {
+    nixosModules = rec {
+      default = server;
+      server = (import ./server.nix) inputs ;
+    };
+  };
 }
 
