@@ -11,15 +11,25 @@
     nixpkgs,
     nix-minecraft,
     ...
-  }: {
+  }: let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      overlays = [nix-minecraft.overlay];
+      inherit system;
+      config.allowUnfree = true;
+    };
+  in {
+    devShells."${system}".default = pkgs.mkShell {
+      packages = with pkgs; [
+        packwiz
+        unzip
+        zip
+        temurin-jre-bin-21
+        toml-cli
+      ];
+    };
     nixosModules = {
-      server = let
-        pkgs = import nixpkgs {
-          overlays = [nix-minecraft.overlay];
-          system = "x86_64-linux";
-          config.allowUnfree = true;
-        };
-      in import ./server.nix {inherit nix-minecraft pkgs;};
+      server = import ./server.nix {inherit nix-minecraft pkgs;};
     };
   };
 }
