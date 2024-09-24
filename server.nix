@@ -7,8 +7,8 @@
       hash = "sha256-O8nr3Fg7NqvSpltibEufNfIRd/v0KoUWBuquo/1C7g8=";
     };
     modpack = pkgs.fetchPackwizModpack {
-      url = "https://raw.githubusercontent.com/dozed-dev/qiwi-modpack/f410fd07d76fdfbdb44df9b6ee630c3df037c7ee/packwiz/pack.toml";
-      packHash = "sha256-lYQrgpdSXm7L96gqsP0HX1nsaRcI4BN9NtoMhINzZ5g=";
+      url = "https://raw.githubusercontent.com/dozed-dev/qiwi-modpack/main/packwiz/pack.toml";
+      packHash = "sha256-kNZVc6uYQdSYxUFPSM4a+YMPulwZPf7JMDjGt6V+rNs=";
     };
   in {
     enable = true;
@@ -19,7 +19,7 @@
         package = pkgs.fabricServers.fabric-1_21.override { loaderVersion = "0.16.5"; };
         symlinks = {
           "mods" = "${modpack}/mods";
-          #"config" = "${modpack}/config";
+          "config" = "${modpack}/config-server";
         };
 
         serverProperties = {

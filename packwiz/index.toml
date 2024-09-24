@@ -1,6 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config-server/chunky/config.json"
+hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+
+[[files]]
+file = "config-server/ferritecore.mixin.properties"
+hash = "3cc3011619f098fda6ad213a7c4d1468802ff827591a5917c2b7bf3150bfb2ea"
+
+[[files]]
+file = "config-server/lithium.properties"
+hash = "76765e8e5ff8e927d80beb0739aababcf36e7babfd94262f2afece256cc5cd2e"
+
+[[files]]
+file = "config-server/modernfix-mixins.properties"
+hash = "ee70e55e812f3b46f2db0e16cd746a8996b017e2d92b40fc5ff26cc93c93a237"
+
+[[files]]
 file = "config/fabric_loader_dependencies.json"
 hash = "8672db6bcd4b6a25cbdc6aa55f1e89822468f40128662943b9e3fce9d75c7ab2"
 
