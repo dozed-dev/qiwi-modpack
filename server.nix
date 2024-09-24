@@ -16,6 +16,10 @@
   in {
     enable = true;
     eula = true;
+    managementSystem = {
+      tmux.enable = false;
+      systemd-socket.enable = true;
+    };
     servers = {
       test-server1 = {
         enable = true;
@@ -23,7 +27,6 @@
         package = pkgs.fabricServers.${serverVersion}.override { loaderVersion = fabricVersion; };
         symlinks = {
           "mods" = "${modpack}/mods";
-          "config" = "${modpack}/config-server";
         };
 
         serverProperties = {
