@@ -17,6 +17,14 @@ file = "config-server/modernfix-mixins.properties"
 hash = "ee70e55e812f3b46f2db0e16cd746a8996b017e2d92b40fc5ff26cc93c93a237"
 
 [[files]]
+file = "config/capes.json5"
+hash = "c88ac7aec7bc08f867f8a9f6c7bf9396871d03d12b0f4d7100e8ef1fddfac68e"
+
+[[files]]
+file = "config/debugify.json"
+hash = "70785772d8e66e1b75fa58ef0ceff1b598a78a025b05908ffd03c66cb6a1216d"
+
+[[files]]
 file = "config/fabric_loader_dependencies.json"
 hash = "8672db6bcd4b6a25cbdc6aa55f1e89822468f40128662943b9e3fce9d75c7ab2"
 
@@ -33,20 +41,12 @@ file = "config/yosbr/config/PaginatedAdvancements.json5"
 hash = "3a1c71d2011cac176e00697237148ee882393b19394374862f8025f129d4c5a2"
 
 [[files]]
-file = "config/yosbr/config/capes.json5"
-hash = "c88ac7aec7bc08f867f8a9f6c7bf9396871d03d12b0f4d7100e8ef1fddfac68e"
-
-[[files]]
 file = "config/yosbr/config/citresewn.json"
 hash = "057e9e53790394db8b700616de3c235b0af3dc12fe7731a66ad20026acb9d991"
 
 [[files]]
 file = "config/yosbr/config/controlify.json"
 hash = "8c79b471bad59fcb9d73c4689dd6687be63facefd73a17f11f1bf4acf00c158d"
-
-[[files]]
-file = "config/yosbr/config/debugify.json"
-hash = "70785772d8e66e1b75fa58ef0ceff1b598a78a025b05908ffd03c66cb6a1216d"
 
 [[files]]
 file = "config/yosbr/config/dynamic_fps.json"
