@@ -29,7 +29,10 @@
       ];
     };
     nixosModules = {
-      server = import ./server.nix {inherit nix-minecraft pkgs;};
+      server = import ./server.nix {
+        inherit nix-minecraft pkgs;
+        lib = nixpkgs.lib;
+      };
     };
   };
 }

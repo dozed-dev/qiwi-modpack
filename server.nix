@@ -1,4 +1,4 @@
-{ nix-minecraft, pkgs, ... }: {
+{ nix-minecraft, pkgs, lib, ... }: {
   imports = [ nix-minecraft.nixosModules.minecraft-servers ];
 
   services.minecraft-servers = let
@@ -10,13 +10,16 @@
       url = "https://raw.githubusercontent.com/dozed-dev/qiwi-modpack/main/packwiz/pack.toml";
       packHash = "sha256-kNZVc6uYQdSYxUFPSM4a+YMPulwZPf7JMDjGt6V+rNs=";
     };
+    mcVersion = modpack.manifest.versions.minecraft;
+    fabricVersion = modpack.manifest.versions.fabric;
+    serverVersion = lib.replaceStrings [ "." ] [ "_" ] "fabric-${mcVersion}";
   in {
     enable = true;
     eula = true;
     servers = {
       test-server1 = {
         enable = true;
-        package = pkgs.fabricServers.fabric-1_21.override { loaderVersion = "0.16.5"; };
+        package = pkgs.fabricServers.${serverVersion}.override { loaderVersion = fabricVersion; };
         symlinks = {
           "mods" = "${modpack}/mods";
           "config" = "${modpack}/config-server";
