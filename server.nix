@@ -7,8 +7,8 @@
       hash = "sha256-O8nr3Fg7NqvSpltibEufNfIRd/v0KoUWBuquo/1C7g8=";
     };
     modpack = pkgs.fetchPackwizModpack {
-      url = "https://raw.githubusercontent.com/dozed-dev/qiwi-modpack/f68e1965bfe848729d9cf5ae06aa877cff2d3d8d/packwiz/pack.toml";
-      packHash = "sha256-ZcGUsAFaPCdVmzGt7Fe/UynvDz98ChAdThp4+TmUtws=";
+      url = "https://raw.githubusercontent.com/dozed-dev/qiwi-modpack/f410fd07d76fdfbdb44df9b6ee630c3df037c7ee/packwiz/pack.toml";
+      packHash = "sha256-lYQrgpdSXm7L96gqsP0HX1nsaRcI4BN9NtoMhINzZ5g=";
     };
   in {
     enable = true;
