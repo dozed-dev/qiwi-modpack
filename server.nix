@@ -19,6 +19,7 @@
     servers = {
       test-server1 = {
         enable = true;
+        autoStart = false;
         package = pkgs.fabricServers.${serverVersion}.override { loaderVersion = fabricVersion; };
         symlinks = {
           "mods" = "${modpack}/mods";
