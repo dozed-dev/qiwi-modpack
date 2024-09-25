@@ -27,6 +27,7 @@
         package = pkgs.fabricServers.${serverVersion}.override { loaderVersion = fabricVersion; };
         symlinks = {
           "mods" = "${modpack}/mods";
+          "allowed_symlinks.txt" = pkgs.writeText "allowed_symlinks.txt" "/nix/store";
         } // (
           with builtins;
           let
