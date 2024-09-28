@@ -143,7 +143,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "b2e98992d952456f37ec040b2a3abfcc6f2bd4a6b9406d5dbe04a85c920ce582"
+hash = "c03d77f40b53a229112df4cd4a83468ea6eee119549c79accfadb508cf9fb989"
 metafile = true
 
 [[files]]
@@ -268,7 +268,7 @@ metafile = true
 
 [[files]]
 file = "mods/owo-lib.pw.toml"
-hash = "705b12953afb39daf0def61796eb3e59e562c3781d0b6283db0e5ffd85464036"
+hash = "c800a56c96d7c8217a7ac3faed438d66dfa6c64a0d880d72d117d4889856b4e6"
 metafile = true
 
 [[files]]
