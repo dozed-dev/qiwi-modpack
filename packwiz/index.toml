@@ -202,6 +202,11 @@ hash = "1f6c74d7140e368e85df87d1bdbb4b533052488dcee7e23ecc1f699dfd2efe82"
 metafile = true
 
 [[files]]
+file = "mods/fast-minecart.pw.toml"
+hash = "e3d107ded7b925a01b132b8ee5fc41156235dec1a8c100eca6c0e064214209f5"
+metafile = true
+
+[[files]]
 file = "mods/faster-random.pw.toml"
 hash = "31cd9b39f38befed65a8607df20ab6f5e3f43cdf260829d7fc56e400fad12924"
 metafile = true
