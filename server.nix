@@ -63,6 +63,7 @@
 
         serverProperties = {
           serverPort = 25565;
+          level-seed = 5737815045236952222;
         };
         jvmOpts = "-javaagent:${authlib-injector}=ely.by";
       };
