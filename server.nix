@@ -60,10 +60,23 @@
             configFilesAttrset = zipListsToAttrset relPaths (map toString configFileList);
           in configFilesAttrset
         );
+        files = {
+          "ops.json".value = [{
+            name = "vfork";
+            uuid = "adab691a-764e-4dc9-8055-f212f87551a6";
+            level = 4;
+          }];
+        };
 
         serverProperties = {
           serverPort = 25565;
+          enforce-secure-profile = false;
+          region-file-compression = "lz4";
+          snooper-enabled = false;
+          # Gameplay
           level-seed = 5737815045236952222;
+          spawn-protection = 0;
+          view-distance = 32;
         };
         jvmOpts = "-javaagent:${authlib-injector}=ely.by";
       };
