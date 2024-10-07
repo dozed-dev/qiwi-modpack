@@ -222,6 +222,16 @@ hash = "078c828454d8a361baae372b5ee3dc33e5f3573fa19bdac8589b38da9dbc5c03"
 metafile = true
 
 [[files]]
+file = "mods/floodgate.pw.toml"
+hash = "ee7660b0580e7920853ef8f0518144cb497e62c6674d8b0021e210b80553f565"
+metafile = true
+
+[[files]]
+file = "mods/geyser.pw.toml"
+hash = "cd152f9a69cd55698091bc776410327033909c5daaf0f064833b1c95793a226b"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "ae42dc97752bf2031b0fb77994ab04e51e5569a637f2f9ee6a98937053b0d290"
 metafile = true
