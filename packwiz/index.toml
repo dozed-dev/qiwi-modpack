@@ -110,7 +110,7 @@ hash = "6a44a4b8c47da468b8e504b95ff1bbaf4911fdec7ddcdc614422c975d7332e6c"
 
 [[files]]
 file = "mods/ambientsounds.pw.toml"
-hash = "611dd38f46108493b1d0b63cb3580d522b42d43e6680ab07de74f51224e18a10"
+hash = "20f677dc377f5069c8da4636cb7bcf068fbca27a60fda63ac9e2fe273fa9f765"
 metafile = true
 
 [[files]]
@@ -155,12 +155,12 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "c03d77f40b53a229112df4cd4a83468ea6eee119549c79accfadb508cf9fb989"
+hash = "7f2dd0368f0a78a2ebe680de14c52b21285a985d3ccfc88f9659872666f9df13"
 metafile = true
 
 [[files]]
 file = "mods/debugify.pw.toml"
-hash = "b50942a1bec0085be9e0e8902f43623593c38e66dab0117c5a28cbe90dcd80dd"
+hash = "24025ba601cfb851ede832821ab4d26dfe168db61f3c63e0b3fd2820176fb40c"
 metafile = true
 
 [[files]]
@@ -175,7 +175,7 @@ metafile = true
 
 [[files]]
 file = "mods/e4mc.pw.toml"
-hash = "5d731f0eb042aa96371b5af117c3cfe191bd94f8bd125b46c51818611fd3425f"
+hash = "6d4178a37dbe220eb455e103818fc642a7e6099a2d24c8f6a0f7e4c5201cf472"
 metafile = true
 
 [[files]]
@@ -195,7 +195,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "a8800671ba62afc0a0a2bcbf4330ba7a5906f5fba7ec88b6d5afac2572ecd617"
+hash = "40ec6cacc1f65f3aac6f72a14f95e59a76d907cd8804c0441a06d9e06fa4a73c"
 metafile = true
 
 [[files]]
@@ -245,7 +245,7 @@ metafile = true
 
 [[files]]
 file = "mods/hurricane.pw.toml"
-hash = "e90e70d247817ca02ebd0ec3f7836c3ecab2c81b68faf2d6a56e6f0e89c279cb"
+hash = "76131035da61001892bcd81c9fef88e88c6a03c0a170ffc2e21c04f085626d51"
 metafile = true
 
 [[files]]
@@ -265,7 +265,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "65e636524c7311fe98f308e26a2b67ed2589957aab04313e541c75afd701284a"
+hash = "c24fcd33ecd783569879dbe9ecb8cdd1dcc7e00c1f40cda0271100255e155162"
 metafile = true
 
 [[files]]
@@ -275,7 +275,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "ebbaf07d4e04f172081d5f4bec47837ae1008c5a6dbedc32f7ba471dd3d004cd"
+hash = "8db4414ae685883aaa38fba9d9412962338585c231b20b1770b20a119a0d5ba6"
 metafile = true
 
 [[files]]
@@ -295,7 +295,7 @@ metafile = true
 
 [[files]]
 file = "mods/optigui.pw.toml"
-hash = "70cd733bdba0662b93fb75578e1b9e1e9bbcce246cf97fcfae407bf074ff8ab8"
+hash = "adf7d24d151493401d0a082d86c36d04829727a696a3302c93f5026c19faa4cc"
 metafile = true
 
 [[files]]
@@ -320,12 +320,12 @@ metafile = true
 
 [[files]]
 file = "mods/polytone.pw.toml"
-hash = "36268eb18499a2ef4ce8b7b4a0a46281b352b7081637b427f73c3df8bfc5b846"
+hash = "b69d4e0d36fd0b4520e72b6eebd4104e842027ded62e1ebb362dd2e3bd7a5608"
 metafile = true
 
 [[files]]
 file = "mods/puzzle.pw.toml"
-hash = "bd8bce6d875a0cdb5a793202a9da9d715164bc9c88ee144aa4bf9b44fec0aa56"
+hash = "2390452b633288cbfff659123a0948fe00829c09df625a3e988857b60a40f1b4"
 metafile = true
 
 [[files]]
@@ -335,7 +335,7 @@ metafile = true
 
 [[files]]
 file = "mods/servercore.pw.toml"
-hash = "84c41ede22cfaf4d5ef2c60c6fa1c95a40432f7ff795ffcdff122aa717c6eea5"
+hash = "f9dd36cb14ed1a79ae7be2762dde5cf10e052e7957f4f80785471d8e92b1b4a9"
 metafile = true
 
 [[files]]
@@ -365,7 +365,7 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/Chat_Reporting_Helper.pw.toml"
-hash = "de3638002da8769311c320caefe3da2930d7ff5b1a384d3114649875c41d9004"
+hash = "d2a28b56635c9f1dfb07fe6afe218eb3ec9ef4483325ec8f4377db6058fd35c8"
 metafile = true
 
 [[files]]
@@ -375,5 +375,5 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/Translations_for_Sodium.pw.toml"
-hash = "82783a119fdd8e553b945be2ed2bd33c9eaa3c68a44b58c5925be85d1ea05a6c"
+hash = "b68be4ab493643b2b9e44689798643292acaedf0fbcd92befdd1386feb3641c4"
 metafile = true
