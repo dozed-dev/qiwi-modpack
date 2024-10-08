@@ -78,7 +78,7 @@
           spawn-protection = 0;
           view-distance = 32;
         };
-        jvmOpts = "-javaagent:${authlib-injector}=localhost:25585";
+        jvmOpts = "-javaagent:${authlib-injector}=http://localhost:25585 -Dauthlibinjector.disableHttpd";
       };
     };
   };
