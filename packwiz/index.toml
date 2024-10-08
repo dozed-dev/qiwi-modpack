@@ -1,20 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
-file = "config-server/chunky/config.json"
-hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+file = "config/Geyser-Fabric/config.yml"
+hash = "3b209de6b2ff5c176aedc053424f2c6eea8791b060e5d2edb6514cf5735ac910"
 
 [[files]]
-file = "config-server/ferritecore.mixin.properties"
-hash = "3cc3011619f098fda6ad213a7c4d1468802ff827591a5917c2b7bf3150bfb2ea"
+file = "config/Geyser-Fabric/custom-skulls.yml"
+hash = "aa24c229554aae576618944e30bba3e0c648eee98c8b47bd2255e3780fe87898"
 
 [[files]]
-file = "config-server/lithium.properties"
-hash = "76765e8e5ff8e927d80beb0739aababcf36e7babfd94262f2afece256cc5cd2e"
-
-[[files]]
-file = "config-server/modernfix-mixins.properties"
-hash = "ee70e55e812f3b46f2db0e16cd746a8996b017e2d92b40fc5ff26cc93c93a237"
+file = "config/Geyser-Fabric/packs/GeyserOptionalPack.mcpack"
+hash = "744dc55fe3f5b636bd0104e64b40562539c568c37050ad367227429a11ad4b16"
 
 [[files]]
 file = "config/capes.json5"
@@ -27,6 +23,14 @@ hash = "70785772d8e66e1b75fa58ef0ceff1b598a78a025b05908ffd03c66cb6a1216d"
 [[files]]
 file = "config/fabric_loader_dependencies.json"
 hash = "8672db6bcd4b6a25cbdc6aa55f1e89822468f40128662943b9e3fce9d75c7ab2"
+
+[[files]]
+file = "config/floodgate/config.yml"
+hash = "86092e568195f7a08823182a21a7b5526c5a13cf51ed4803f9c9191c16c6f3d5"
+
+[[files]]
+file = "config/hurricane.conf"
+hash = "3d38d40eaf3d5c97ab23581c1d50e9ea521f3a3fbc5291e070d451a6b25a2562"
 
 [[files]]
 file = "config/immediatelyfast.json"
@@ -79,6 +83,10 @@ hash = "cab638ef75572d2c4bcc9dfd583283e7bbe927fd6c3834930bed52e2dbcac063"
 [[files]]
 file = "config/yosbr/config/moreculling.toml"
 hash = "60eb0902eac918d39fb5eb7df66314f5748aef0259b4ad5bdeacd27dfff120ca"
+
+[[files]]
+file = "config/yosbr/config/particular.json5"
+hash = "2ef28c4cf7a2e6d8316f665219b7c8e307931734e02ba1dc05a9ff6f35bb07a0"
 
 [[files]]
 file = "config/yosbr/config/puzzle.json"
