@@ -2,7 +2,32 @@ Domain = "localhost"
 BaseURL = "http://localhost:25585"
 DefaultAdmins = ["vfork"]
 
+ForwardSkins = true
+AllowChangingPlayerName = false
+
 [RegistrationNewPlayer]
 Allow = true
-AllowChoosingUUID = true
-RequireInvite = true
+
+[RegistrationExistingPlayer]
+  Allow = true
+  Nickname = "Mojang"
+  SessionURL = "https://sessionserver.mojang.com"
+  AccountURL = "https://api.mojang.com"
+  SetSkinURL = "https://www.minecraft.net/msaprofile/mygames/editskin"
+  RequireSkinVerification = true
+
+[[FallbackAPIServers]]
+  Nickname = "Mojang"
+  SessionURL = "https://sessionserver.mojang.com"
+  AccountURL = "https://api.mojang.com"
+  ServicesURL = "https://api.minecraftservices.com"
+  SkinDomains = ["textures.minecraft.net"]
+  CacheTTLSeconds = 60
+
+[[FallbackAPIServers]]
+  Nickname = "Ely.by"
+  SessionURL = "https://account.ely.by/api/authlib-injector/sessionserver"
+  AccountURL = "https://account.ely.by/api"
+  ServicesURL = "https://account.ely.by/api/authlib-injector/minecraftservices"
+  SkinDomains = ["ely.by", ".ely.by"]
+  CacheTTLSeconds = 60
