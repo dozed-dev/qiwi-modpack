@@ -334,6 +334,16 @@ hash = "e9133c80c483d4741651144ded2937be8454d673f08a720ce568c89c0050345e"
 metafile = true
 
 [[files]]
+file = "mods/replaymod.pw.toml"
+hash = "f380f729c2bb69e7183333224d4468beb9728b834ee754a5a0a1ff53b9665b18"
+metafile = true
+
+[[files]]
+file = "mods/server-replay.pw.toml"
+hash = "90f860a946fbdcac64695975de2c5d95be7a2e7f51d1f809aee3afbdfa0a5a2f"
+metafile = true
+
+[[files]]
 file = "mods/servercore.pw.toml"
 hash = "f9dd36cb14ed1a79ae7be2762dde5cf10e052e7957f4f80785471d8e92b1b4a9"
 metafile = true

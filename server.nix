@@ -8,7 +8,7 @@
     };
     modpack = pkgs.fetchPackwizModpack {
       url = "https://raw.githubusercontent.com/dozed-dev/qiwi-modpack/main/packwiz/pack.toml";
-      packHash = "sha256-ktJnykeaUIlalClPfS6vR4uZK/21+Nd5d4NPhD7ku6U=";
+      packHash = "sha256-kgd7C8NG0qyh6aLuLzlggVwyOD/malH2u1GpDgsNv34=";
     };
     mcVersion = modpack.manifest.versions.minecraft;
     fabricVersion = modpack.manifest.versions.fabric;
