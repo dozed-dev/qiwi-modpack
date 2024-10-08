@@ -1,0 +1,8 @@
+Domain = "localhost"
+BaseURL = "http://localhost:25585"
+DefaultAdmins = ["vfork"]
+
+[RegistrationNewPlayer]
+Allow = true
+AllowChoosingUUID = true
+RequireInvite = true

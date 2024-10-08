@@ -5,11 +5,13 @@
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+    drasl.url = "github:unmojang/drasl";
   };
 
   outputs = {
     nixpkgs,
     nix-minecraft,
+    drasl,
     ...
   }: let
     system = "x86_64-linux";
@@ -32,6 +34,9 @@
       server = import ./server.nix {
         inherit nix-minecraft pkgs;
         lib = nixpkgs.lib;
+      };
+      drasl = import ./drasl.nix {
+        inherit drasl pkgs;
       };
     };
   };
