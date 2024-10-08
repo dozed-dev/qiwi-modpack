@@ -232,6 +232,11 @@ hash = "cd152f9a69cd55698091bc776410327033909c5daaf0f064833b1c95793a226b"
 metafile = true
 
 [[files]]
+file = "mods/hurricane.pw.toml"
+hash = "e90e70d247817ca02ebd0ec3f7836c3ecab2c81b68faf2d6a56e6f0e89c279cb"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "ae42dc97752bf2031b0fb77994ab04e51e5569a637f2f9ee6a98937053b0d290"
 metafile = true
