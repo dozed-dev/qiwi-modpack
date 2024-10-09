@@ -28,38 +28,7 @@
         symlinks = {
           "mods" = "${modpack}/mods";
           "allowed_symlinks.txt" = pkgs.writeText "allowed_symlinks.txt" "/nix/store";
-        } // (
-          with builtins;
-          let
-            getFilesRecursively = path:
-              lib.lists.concatMap (path:
-                if path.value == "directory"
-                then (getFilesRecursively path.name)
-                else [path]
-              ) (
-                map (file: {
-                  value = file.value;
-                  name = "${path}/${file.name}";
-                }) (
-                  lib.attrsets.attrsToList (readDir path)
-                )
-              );
-            relPath = root: path:
-                unsafeDiscardStringContext (substring
-                  (stringLength (toString root) + 1)
-                  (-1)
-                  (toString path));
-            zipListsToAttrset = names: values:
-              lib.listToAttrs (
-                lib.zipListsWith
-                  (name: value: { inherit name value; })
-                  names values
-              );
-            configFileList = map (file: file.name) (getFilesRecursively "${modpack}/config");
-            relPaths = map (relPath modpack) configFileList;
-            configFilesAttrset = zipListsToAttrset relPaths (map toString configFileList);
-          in configFilesAttrset
-        );
+        } // nix-minecraft.lib.collectFilesAt modpack "config";
         files = {
           "ops.json".value = [{
             name = "vfork";
