@@ -28,14 +28,14 @@
         symlinks = {
           "mods" = "${modpack}/mods";
           "allowed_symlinks.txt" = pkgs.writeText "allowed_symlinks.txt" "/nix/store";
-        } // nix-minecraft.lib.collectFilesAt modpack "config";
+        };
         files = {
           "ops.json".value = [{
             name = "vfork";
             uuid = "adab691a-764e-4dc9-8055-f212f87551a6";
             level = 4;
           }];
-        };
+        } // nix-minecraft.lib.collectFilesAt modpack "config";
 
         serverProperties = {
           serverPort = 25565;
