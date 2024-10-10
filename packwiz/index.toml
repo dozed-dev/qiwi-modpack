@@ -42,7 +42,7 @@ hash = "66d3d1004a3a2f1ce2c07b561f03f1ce9850ccf254609ec19aaab0fe426b8f26"
 
 [[files]]
 file = "config/yosbr/config/DistantHorizons.toml"
-hash = "65e73d4691d33c7640462fb0f7ff4918fc2721ef82a56945ca6d82d3c18af1f8"
+hash = "b47c37d473dddc5663699d40d15aa9e0e205a03ebe06bdfda3572542e00a7425"
 
 [[files]]
 file = "config/yosbr/config/PaginatedAdvancements.json5"

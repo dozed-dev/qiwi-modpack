@@ -92,7 +92,7 @@ _version = 2
 			[client.advanced.graphics.quality]
 				#
 				# The radius of the mod's render distance. (measured in chunks)
-				lodChunkRenderDistanceRadius = 128
+				lodChunkRenderDistanceRadius = 64
 				#
 				# Should the blocks underneath avoided blocks gain the color of the avoided block?
 				#
