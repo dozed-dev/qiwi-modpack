@@ -1,0 +1,10 @@
+{
+    servers: [
+        {
+            hidden: 0b,
+            ip: "kluster-mc.local",
+            name: "Kluster-5737815045236952222",
+            acceptTextures: 1b
+        }
+    ]
+}

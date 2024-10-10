@@ -28,6 +28,7 @@
         zip
         temurin-jre-bin-21
         toml-cli
+        python3Packages.nbtlib
       ];
     };
     nixosModules = {

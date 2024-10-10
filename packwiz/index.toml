@@ -42,7 +42,7 @@ hash = "66d3d1004a3a2f1ce2c07b561f03f1ce9850ccf254609ec19aaab0fe426b8f26"
 
 [[files]]
 file = "config/yosbr/config/DistantHorizons.toml"
-hash = "c4a3b127be643d5f5a330eb5290e290efba8b232bfe9e0f2003ee17efcfadc79"
+hash = "65e73d4691d33c7640462fb0f7ff4918fc2721ef82a56945ca6d82d3c18af1f8"
 
 [[files]]
 file = "config/yosbr/config/PaginatedAdvancements.json5"
@@ -107,6 +107,10 @@ hash = "37aaf52aa7545527c7ade71ac77ad2fcf6019995bf58b6ea1fe0f52949919d18"
 [[files]]
 file = "config/yosbr/options.txt"
 hash = "6a44a4b8c47da468b8e504b95ff1bbaf4911fdec7ddcdc614422c975d7332e6c"
+
+[[files]]
+file = "config/yosbr/servers.dat"
+hash = "7b4e33b941d1551c725ea9f1df6f581091bba3aa501c93a55b635e19d8ed0e13"
 
 [[files]]
 file = "mods/ambientsounds.pw.toml"
